@@ -1,0 +1,10 @@
+name: RotMK
+version: 1.0.0
+main: me.faris.rotmk.Main
+description: Realm of the Mad God in Minecraft as a King!
+author: KingFaris10
+depend: [Vault, WorldEdit]
+commands:
+   rotmk:
+     description: RotMK command.
+     usage: /<command> [<setportal> <realmID>]
