@@ -17,7 +17,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.permissions.Permission;
 
 public class CommandListener implements CommandExecutor {
-
     public Permission permission_setPortal = new Permission("rotmk.commands.setportal");
 
     @Override
