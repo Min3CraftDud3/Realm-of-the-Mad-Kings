@@ -77,10 +77,10 @@ public class Main extends JavaPlugin {
         this.rotmkClasses.add(new RotMKClass("Priest", ChatColor.WHITE, new ClassStatistic(20, 134), new ClassStatistic(100, 385), new ClassStatistic(10, 50), new ClassStatistic(0, 25), new ClassStatistic(12, 50), new ClassStatistic(12, 50)).setIncrementAttack(new ClassStatistic(0, 2)).setIncrementDefense(new ClassStatistic(0, 0)).setIncrementDexterity(new ClassStatistic(0, 2)).setIncrementHealth(new ClassStatistic(4, 6)).setIncrementMagic(new ClassStatistic(5, 15)).setIncrementSpeed(new ClassStatistic(1, 2)));
         this.rotmkClasses.add(new RotMKClass("Warrior", ChatColor.GRAY, new ClassStatistic(40, 144), new ClassStatistic(100, 252), new ClassStatistic(15, 75), new ClassStatistic(0, 25), new ClassStatistic(10, 50), new ClassStatistic(7, 50)).setIncrementAttack(new ClassStatistic(1, 2)).setIncrementDefense(new ClassStatistic(0, 0)).setIncrementDexterity(new ClassStatistic(0, 2)).setIncrementHealth(new ClassStatistic(4, 6)).setIncrementMagic(new ClassStatistic(2, 8)).setIncrementSpeed(new ClassStatistic(0, 2)));
         // TODO: Continue adding classes, converting them into the new format (ClassStatistic)
-		/**
+        /**
          this.rotmkClasses.add(new RotMKClass("Knight", ChatColor.DARK_GRAY, 0, 0, 30, 0, 0));
          this.rotmkClasses.add(new RotMKClass("Paladin", ChatColor.YELLOW, 0, 0, 30, 0, 0));
-         this.rotmkClasses.add(new RotMKClass("Assasin", ChatColor.DARK_BLUE, 0, 0, 30, 0, 0));
+         this.rotmkClasses.add(new RotMKClass("Assassin", ChatColor.DARK_BLUE, 0, 0, 30, 0, 0));
          this.rotmkClasses.add(new RotMKClass("Necromancer", ChatColor.DARK_PURPLE, 0, 0, 30, 0, 0));
          this.rotmkClasses.add(new RotMKClass("Huntress", ChatColor.DARK_PURPLE, 0, 0, 30, 0, 0));
          this.rotmkClasses.add(new RotMKClass("Mystic", ChatColor.LIGHT_PURPLE, 0, 0, 30, 0, 0));
@@ -424,7 +424,7 @@ public class Main extends JavaPlugin {
                 } catch (UUIDException ex) {
                     ex.printStackTrace();
                     if (Bukkit.getPlayerExact(playerName) != null)
-                        Bukkit.getPlayerExact(playerName).kickPlayer(ChatColor.RED + "An error occured!");
+                        Bukkit.getPlayerExact(playerName).kickPlayer(ChatColor.RED + "An error occurred!");
                 }
                 return true;
             }
@@ -454,5 +454,4 @@ public class Main extends JavaPlugin {
     // TODO: Make tiers for items and detect in PlayerListener.
     // TODO: Add increment values for class.
     // TODO: Make stats for class do something. E.g. Attack increases attack.
-
 }

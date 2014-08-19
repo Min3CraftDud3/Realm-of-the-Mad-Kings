@@ -11,22 +11,20 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- *
  * @author Goblom
  */
 public class ThreadedUpdate extends Thread {
-    
     private Connection conn;
     private final String sqlQuery;
-    
+
     public ThreadedUpdate(Connection conn, String sqlQuery) {
         this.conn = conn;
         this.sqlQuery = sqlQuery;
     }
-    
+
     @Override
     public void run() {
-        try {            
+        try {
             if (!this.isInterrupted()) {
                 Statement state = conn.createStatement();
                 state.execute(sqlQuery);
